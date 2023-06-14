@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
 	padding: 20px 0;
@@ -8,6 +12,7 @@ header {
 	width: 940px;
 	margin: 0 auto;
 }
+
 nav {
 	position: absolute;
 	top: 110px;
@@ -31,6 +36,7 @@ nav a:hover {
 	color: #C78C19;
 	text-decoration: underline;
 }
+
 .produtos {
 	width: 940px;
 	margin: 0 auto;
@@ -73,32 +79,31 @@ nav a:hover {
 .produto-preco {
 	font-size: 22px;
 	font-weight: bold;
-	margin: 10px 0 0;
+	margin-top: 10px;
 }
 
 footer {
 	text-align: center;
-	background: url(bg.jpg);
+	background: url("bg.jpg");
 	padding: 40px 0;
 }
 
-.copyright{
+.copyright {
 	color: #FFFFFF;
-	font-size: 15px;
+	font-size: 13px;
 	margin: 20px 0 0;
 }
 
 main {
-	width: 940px;
-	margin: 0 auto;
+	
 }
 
 form {
 	margin: 40px 0;	
 }
 
-form label, form legend{
-	display: block;
+form label, form legend {
+	display:block;
 	font-size: 20px;
 	margin: 0 0 10px;
 }
@@ -115,14 +120,14 @@ form label, form legend{
 }
 
 .enviar {
-	width: 40%;
+	width:40%;
 	padding: 15px 0;
 	background: orange;
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
-	box-sizing: 5px;
+	border-radius: 5px;
 	transition: 1s all;
 	cursor: pointer;
 }
@@ -154,10 +159,17 @@ td, th {
 
 .titulo-principal {
 	text-align: center;
-	font-size: 2em;
-	/*em = dobro do tamanho principal*/
+	font-size: 2em; /*em = dobro do tamanho principal*/
 	margin: 0 0 1em;
+	clear: left;
 }
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+	margin: 0 auto;
+} 
 
 .principal p {
 	margin: 0 0 1em;
@@ -171,6 +183,67 @@ td, th {
 	font-style: italic;
 }
 
-.imagembeneficios {
+.utensilios {
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
 	width: 60%;
+	opacity: 0.3;
+	transition: 400ms;
+	box-shadow: 10px 10px 5px #000000;
+}
+
+.imagem-beneficios:hover {
+    opacity: 1;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
 }
